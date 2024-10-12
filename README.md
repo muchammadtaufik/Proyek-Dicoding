@@ -2,8 +2,7 @@
 
 ## Setup Environment - Shell/Terminal
 ```
-pip install Streamlit
-pip install Matplotlib
+.\venv\Scripts\activate
 
 ```
 
