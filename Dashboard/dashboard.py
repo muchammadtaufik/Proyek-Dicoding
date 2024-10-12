@@ -27,8 +27,8 @@ def create_byHourGroup_df(df):
     return byHourGroup_df
 
 # Load datasets
-day_df = pd.read_csv(r"C:\KULIAH\SEMESTER 5\MATERI\Dicoding\Bangkit\Materi\Analisis Data dengan Python\DATA PROJEK\bike sharing\Data\day.csv")
-hour_df = pd.read_csv(r"C:\KULIAH\SEMESTER 5\MATERI\Dicoding\Bangkit\Materi\Analisis Data dengan Python\DATA PROJEK\bike sharing\Data\hour.csv")
+day_df = pd.read_csv("day.csv")
+hour_df = pd.read_csv("hour.csv")
 
 
 # Sort values and convert date column
@@ -44,7 +44,7 @@ max_date = day_df[column].max()
 
 with st.sidebar:
     # Replace with relative path or online URL if necessary
-    st.image("C:/KULIAH/SEMESTER 5/MATERI/Dicoding/Bangkit/Materi/Analisis Data dengan Python/DATA PROJEK/bike sharing/Tampilan Streamlit/Sepeda.jpg")
+    st.image("Sepeda.jpg")
 
     # Date input for selecting time range
     start_date, end_date = st.date_input(label="Time", min_value=min_date, max_value=max_date, value=[min_date, max_date])
