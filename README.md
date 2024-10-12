@@ -1,8 +1,11 @@
 # Dicoding Collection Dashboard ✨
 
+## Setup Environment
+python -m venv env
+source env/bin/activate  # Windows: env\Scripts\activate
 
 ## Run steamlit app
 ```
-python -m streamlit run "C:\KULIAH\SEMESTER 5\MATERI\Dicoding\Bangkit\Materi\Analisis Data dengan Python\DATA PROJEK\bike sharing\dashboard.py"
+streamlit run dashboard.py
 
 ```
